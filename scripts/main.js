@@ -4,10 +4,10 @@ const roomba = Vars.content.getByName(ContentType.unit, "roomba-roomba");
 const random = Rand(0);
 
 Events.run(Trigger.update, () => {
-    for (let team in Vars.state.teams.present) {
-        for (let core in team.cores) {
-            let x = 8 * (core.x + random.range(10));
-            let y = 8 * (core.y + random.range(10));
+    for (let team of Vars.state.teams.present) {
+        for (let core of team.cores) {
+            let x = core.x + random.range(64);
+            let y = core.y + random.range(64);
             Fx.unitSpawn.at(x, y, 0, roomba);
             roomba.spawn(team, x, y);
         }
