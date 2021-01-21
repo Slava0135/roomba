@@ -10,7 +10,7 @@ roomba.constructor = () => extend(MechUnit, {
 
 roomba.defaultController = () => extend(AIController, {
     updateUnit() {
-        this.vec.set(Position(random.range(1), random.range(1)));
+        this.vec.set(random.range(1), random.range(1));
         this.vec.setLength(this.unit.realSpeed());
         this.unit.moveAt(this.vec)
     },
