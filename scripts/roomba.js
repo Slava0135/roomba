@@ -15,8 +15,9 @@ roomba.defaultController = () => extend(AIController, {
             let y = random.range(1);
             this.vec.set(x, y);
             this.vec.setLength(this.unit.realSpeed());
-            this.unit.moveAt(this.vec);
+            this.unit.lookAt(this.vec);
         }
-        this.unit.lookAt(this.unit.vel);
+        vec.set(Mathf.cosDeg(this.unit.rotation), Mathf.sinDeg(this.unit.rotation))
+        this.unit.moveAt(vec);
     },
 });
