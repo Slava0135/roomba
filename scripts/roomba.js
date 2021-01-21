@@ -18,6 +18,6 @@ roomba.defaultController = () => extend(AIController, {
             this.unit.lookAt(this.vec);
         }
         this.vec.set(Mathf.cosDeg(this.unit.rotation), Mathf.sinDeg(this.unit.rotation));
-        this.unit.moveAt(vec);
+        this.unit.moveAt(this.vec);
     },
 });
