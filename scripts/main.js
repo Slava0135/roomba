@@ -7,8 +7,8 @@ Events.run(Trigger.update, () => {
             if (team.countType(roomba) < Units.getCap(team.team)) {
                 let x = core.x + random.range(64);
                 let y = core.y + random.range(64);
-                let tile = Vars.world.tile(x, y);
-                if (tile == null || tile.building == null){
+                let tile = Vars.world.tile(x / 8, y / 8);
+                if (tile == null || tile.building == null) {
                     Fx.unitSpawn.at(x, y, 0, roomba);
                     roomba.spawn(team.team, x, y);
                 };
