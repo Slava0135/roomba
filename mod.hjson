@@ -1,0 +1,6 @@
+name: "roomba"
+displayName: "roomba"
+author: "Slava0135"
+description: "Freedom to Roombas!"
+version: "1.0"
+minGameVersion: "120"
