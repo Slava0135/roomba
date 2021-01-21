@@ -3,6 +3,4 @@ type: mech
 health: 100
 drawCell: false
 itemCapacity: 10
-commandLimit: 16
-hitSize: 4
 speed: 0.5
