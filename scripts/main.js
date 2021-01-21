@@ -1,7 +1,7 @@
 Vars.enableConsole = true
 
-const roomba = Vars.content.getByName(ContentType.unit, "roomba-roomba");
-const random = Rand(0);
+let roomba = Vars.content.getByName(ContentType.unit, "roomba-roomba");
+let random = Rand(0);
 
 Events.run(Trigger.update, () => {
     Vars.state.teams.present.each((team) => {
