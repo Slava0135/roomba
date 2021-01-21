@@ -3,4 +3,5 @@ type: mech
 health: 100
 drawCell: false
 itemCapacity: 10
+hitSize: 5
 speed: 0.5
