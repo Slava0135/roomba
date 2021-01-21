@@ -1,2 +1,3 @@
 # roomba
+![logo](preview.png)
 adds roombas to the game - those little innocent cute creatures...
