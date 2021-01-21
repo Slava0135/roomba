@@ -1,7 +1,7 @@
 let random = Rand(0);
 
 Events.run(Trigger.update, () => {
-    let roomba = Vars.content.getByName(ContentType.unit, "roomba");
+    let roomba = Vars.content.getByName(ContentType.unit, "roomba-roomba");
     Vars.state.teams.present.each((team) => {
         team.cores.each((core) => {
             let x = core.x + random.range(64);
